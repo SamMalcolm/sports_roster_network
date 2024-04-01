@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 // import './index.css';
 import NBA_RosterGraph from './App';
 import reportWebVitals from './reportWebVitals';
+// import * as csv from 'csv-parse';
+import data from './data.json';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <NBA_RosterGraph />
+    <NBA_RosterGraph data={data} />
   </React.StrictMode>
 );
 
